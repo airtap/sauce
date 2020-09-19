@@ -1,5 +1,5 @@
-name: Test
-on: [push, pull_request]
+name: Sauce Labs
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -25,7 +25,7 @@ jobs:
       - name: Add host
         run: echo "127.0.0.1 airtap.local" | sudo tee -a /etc/hosts
       - name: Test
-        run: npm test
+        run: npm run test:integration
         env:
           SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
           SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
