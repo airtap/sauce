@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "abstract-browser": "^1.0.0",
-    "airtap-sauce-browsers": "^0.2.1",
+    "airtap-sauce-browsers": "^0.2.2",
     "browser-provider": "^1.1.0",
     "build-number": "^1.0.0",
     "debug": "^4.1.1",
