@@ -1,6 +1,6 @@
 {
   "name": "airtap-sauce",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Sauce Labs browser provider",
   "license": "MIT",
   "author": "Vincent Weevers",
