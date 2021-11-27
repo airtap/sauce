@@ -6,10 +6,10 @@
   "author": "Vincent Weevers",
   "scripts": {
     "test": "npm run test:lint && npm run test:integration",
-    "test:lint": "standard && hallmark && depcheck --ignores buffer",
+    "test:lint": "standard && hallmark && depcheck --ignores buffer,hallmark",
     "test:integration": "cross-env DEBUG=airtap* nyc node test",
     "fix:js": "standard --fix",
-    "fix:md": "hallmark --fix"
+    "fix:md": "hallmark fix"
   },
   "files": [
     "index.js",
@@ -32,7 +32,7 @@
     "buffer": "^4.9.2",
     "cross-env": "^7.0.2",
     "depcheck": "^1.2.0",
-    "hallmark": "^3.0.0",
+    "hallmark": "^4.0.0",
     "nyc": "^15.1.0",
     "standard": "^14.3.4",
     "tape": "^5.0.1"
